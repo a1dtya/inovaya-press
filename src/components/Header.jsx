@@ -32,14 +32,14 @@ export default function Header() {
     <header
       className={`z-[999] fixed w-full p-4 transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
-      } ${isAtTop ? "bg-transparent text-white" : "bg-white text-gray-900"} `}
+      } ${isAtTop ? "bg-white text-gray-900": "bg-white text-gray-900"} `}
     >
       <div className="container mx-auto flex   md:flex-row items-center justify-between">
      
         <div className="w-full md:w-auto flex justify-center md:justify-start">
           <Link href="/">
             <Image
-              src={isAtTop ? headerImg2 : headerImg1}
+              src={isAtTop ? headerImg1 : headerImg1}
               width={84}
               height={67}
               alt="bannerImage"
