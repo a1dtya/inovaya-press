@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#root{
+
+    width: 100%;
+    height: 100%;
+
+}
+:root{
+
+    --blur-bg:#51afd123;
+    --primary-white:#ffffff;  
+    --blue2: #51aed1;
+    --transparent: #ffffff00;
+    --dark-blue-2: #003399;
+    --darkblue:#010440;
+    --green-color:#1FA00A;
+    --purple-color:#5C0F87;
+    --blue3:#01498499;
+    --font-large: 18px;
+    --font-normal: 18px;
+    --font-small: 16px;
+
+
+}
+
+
+@font-face{
+    font-family:"Roboto-semibold";
+    src: url('../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family:"Roboto";
+    src: url('../fonts/Roboto/static/Roboto-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family:"Roboto-bold";
+    src: url('../fonts/Roboto/static/Roboto-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family:"Roboto-italics";
+    src: url('../fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+@font-face{
+    font-family:"Nunito-semibold";
+    src: url('../fonts/Nunito/Nunito-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"Nunito-bold";
+    src: url('../fonts/Nunito/static/Nunito-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"Nunito";
+    src: url('../fonts/Nunito/static/Nunito-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face{
+    font-family:"Nunito-italics";
+    src: url('../fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body{
+    color: var(--darkblue);
+    font-family: "Nunito";
+   
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Roboto";
+}
+
+
+p{
+    font-family: "Nunito";
+    font-size: 18px;
+    color: var(--darkblue);
+}
+
+
+.inovaya-title-heading-small h2 {
+
+    font-size: 41px;
+    font-family: "roboto";
+    color: var(--darkblue);
+
+
+}
+.inovaya-title-heading-small h2 strong{
+
+    font-size: 41px;
+    font-style: italic;
+    color: var(--blue2);
+
+
+}
+
+
+.inovaya-title-heading h2 {
+
+    font-size: 46px;
+    font-family: "roboto";
+    color: var(--darkblue);
+
+
+}
+.inovaya-title-heading h2 strong{
+
+    font-size: 46px;
+    font-style: italic;
+    color: var(--blue2);
+    
+
+}
+
+
+
+/* Header */
+
+
+
+.navLink{
+
+    font-size: 16px;
+    font-family: 'Roboto';
+
+    
+}
+
+
+/* Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Press */
+
+/* Press-Hero-Banner */
+
+
