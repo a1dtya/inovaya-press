@@ -23,6 +23,9 @@
     --font-large: 18px;
     --font-normal: 18px;
     --font-small: 16px;
+    --primary-btn-color1: ;
+
+
 
 
 }
@@ -120,16 +123,6 @@ p{
 
 
 }
-.inovaya-title-heading-small h2 strong{
-
-    font-size: 41px;
-    font-style: italic;
-    color: var(--blue2);
-
-
-}
-
-
 .inovaya-title-heading h2 {
 
     font-size: 46px;
@@ -147,9 +140,132 @@ p{
 
 }
 
+.container{
+    padding: 0 12px;
+}
+
+/* btns */
+
+.btn-primary {
+    border-radius: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+    width: fit-content;
+    background-color: rgba(163, 255, 167, 1); 
+    font-family: 'Roboto-semisolid', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    padding: 0.75rem 22px;
+    color: rgba(1, 4, 64, 1); 
+    transition: background-color 1s ease, color 1s ease;
+    overflow: hidden; 
+    border: 2px solid transparent;
+}
+
+.btn-primary:hover {
+    --tw-text-opacity: 1;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    background-color: rgba(3, 66, 93, .7);
+    color: #b5ffb8;
+    color: rgba(181, 255, 184, var(--tw-text-opacity));
+    transition: background-color .3sease 0s, color .3sease 0s;
+}
+
+.btn-primary::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    border: 2px solid rgba(181, 255, 184, 1); 
+    z-index: 1;
+    --clock-hands-position: 100%; 
+    -webkit-mask-image: conic-gradient(
+        from 0deg,
+        transparent var(--clock-hands-position),
+        #000 var(--clock-hands-position)
+    );
+    mask-image: conic-gradient(
+        from 0deg,
+        transparent var(--clock-hands-position),
+        #000 var(--clock-hands-position)
+    );
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    transition: --clock-hands-position 1s ease;
+}
+
+.btn-primary:hover::after {
+    --clock-hands-position: 0%; 
+}
+
+.btn-primary::after {
+    transition: --clock-hands-position 1s ease;
+}
+
+.btn-primary:not(:hover)::after {
+    --clock-hands-position: 100%; 
+}
 
 
-/* Header */
+  
+  /* btn-reverse */
+  
+  .btn-reverse {
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-radius: 1.5rem;
+    display: flex;
+    font-family: 'Roboto-semibold', sans-serif;
+    font-size: 0.875rem; 
+    font-weight: 400;
+    line-height: 1.25rem;
+    padding: 0.75rem 22px;
+    position: relative;
+    width: fit-content;
+    color: rgba(1, 4, 64, 1); 
+    
+    /* Blur effect */
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+  }
+  
+  .btn-reverse::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: 2px solid transparent; 
+    
+    mask-image: conic-gradient(
+        from 0deg,
+        transparent 0%,
+        transparent 100%
+    );
+    -webkit-mask-image: conic-gradient(
+        from 0deg,
+        transparent 0%,
+        transparent 100%
+    );
+  
+    transition: mask-image 1s linear, -webkit-mask-image 1s linear;
+  }
+
+  
+  
+  
+  
+  
+  
+
+  
+
 
 
 

@@ -13,7 +13,7 @@ export default function Footer() {
 
 
         {/* Remaining 4 Columns */}
-        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-5 gap-8 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-5 gap-8 w-full">
 
     {/* Column 1: Logo & Description (Full width) */}
     <div className="footer-col flex flex-col items-center lg:items-start">
